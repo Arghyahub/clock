@@ -1,7 +1,8 @@
-alert("   For Best Experience Press F11     ")
+// alert("   For Best Experience Press F11     ")
 
 let arr = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'] ;
 let brr = ['Jan','Feb','March','April','May','June','July','Aug','Sept','Oct','Nov','Dec'] ;
+
 setInterval(()=>{
     let d = new Date();
     let s = d.getSeconds() ;
@@ -10,5 +11,12 @@ setInterval(()=>{
     document.getElementById('time').innerHTML = d.getHours()+':'+d.getMinutes()+':'+s;
 
     document.getElementById('day').innerHTML = arr[d.getDay()] +"  "+ d.getDate() + "  "+ brr[d.getMonth()] ;
-
 },1000)
+
+let ad = new Audio("bga.mp3")
+ad.play()
+
+setInterval(()=>{
+    let bd = new Audio("bga.mp3")
+    bd.play()
+},96200)
