@@ -22,3 +22,5 @@ function bgplay(){
 document.addEventListener("keypress",(event)=>{
     bgplay() ;
 })
+
+document.addEventListener("click",bgplay) ;
